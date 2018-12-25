@@ -1,0 +1,29 @@
+#======================================================================
+# BUILD TEX
+#======================================================================
+
+1. Set perspective file as thesis.tex
+2. Set builder as Quick Build
+3. Press blue arrow
+
+#======================================================================
+# BUILD NOMENCLATURE
+#======================================================================
+
+1. Set perspective file as thesis.tex
+2. Set builder as PDFLateX
+3. Press blue arrow
+4. Open CMD (Window OS) / Terminal (Linux OS) as project root
+5. Run command: makeindex thesis.nlo -s nomencl.ist -o thesis.nls
+6. Re-run step 2, 3 => #BUILD TEX
+
+#======================================================================
+# BUILD BIBLIOGRAPHY
+#======================================================================
+
+1. Set perspective file as thesis.tex
+2. Set builder as PDFLateX
+3. Press blue arrow
+4. Set builder as BibTeX
+5. Press blue arrow
+6. Re-run step 2, 3 => #BUILD TEX

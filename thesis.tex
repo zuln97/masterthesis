@@ -1,0 +1,39 @@
+\documentclass[a4paper,12pt,oneside,backref]{book}\usepackage[left=3cm,right=2cm,top=3cm,bottom=3cm]{geometry}
+
+\include{thesis.preamble}
+
+% Title inputs
+\university{ĐẠI HỌC QUỐC GIA THÀNH PHỐ HỒ CHÍ MINH\\TRƯỜNG ĐẠI HỌC BÁCH KHOA}
+\faculty{KHOA ĐIỆN - ĐIỆN TỬ\\BỘ MÔN VIỄN THÔNG}    
+\title{MASTER THESIS TITLE}
+\image{\includegraphics[scale=.30]{ThesisFigs/HCMUTLogo}} 
+\supervisor{TS. TRỊNH XUÂN DŨNG}
+\author{LÊ HOÀNG ANH - 1670770}   
+\submitdate{Thành phố Hồ Chí Minh, tháng 12 năm 2017}
+
+\begin{document}
+
+\maketitle
+
+\preface
+\input{Assignments/assignments}
+\input{ScoringVotes1/scoringvotes1}
+\input{ScoringVotes2/scoringvotes2}
+\input{Acknowledgements/acknowledgements}
+\input{Abstract/abstract}
+
+\body
+\input{Chapter1/introduction}
+\input{Chapter2/chapter2}
+\input{Chapter3/chapter3}
+\input{Chapter4/chapter4}
+\input{Chapter5/conclusion}
+
+\appendix
+% appendices come here
+
+\addcontentsline{toc}{chapter}{Tài liệu tham khảo}
+\bibliographystyle{IEEEtran}
+\bibliography{Bibliography/bibliography}
+
+\end{document}
